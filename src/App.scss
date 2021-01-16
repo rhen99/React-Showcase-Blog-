@@ -1,0 +1,53 @@
+@import "./partials/colors";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+
+  &-sm {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+  &-lg {
+    padding: 9px 20px;
+    font-size: 20px;
+  }
+  &-primary {
+    background-color: $primary;
+    color: #fff;
+    &:hover {
+      background-color: darken($primary, 5);
+    }
+  }
+  &-secondary {
+    background-color: #202527;
+    color: #fff;
+  }
+}
