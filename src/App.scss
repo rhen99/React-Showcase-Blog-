@@ -47,7 +47,33 @@ body {
     }
   }
   &-secondary {
-    background-color: #202527;
+    background-color: $secondary;
     color: #fff;
+  }
+}
+.form {
+  &-inline {
+    display: flex;
+    .form-group {
+      &:nth-child(1) {
+        flex: 1;
+      }
+    }
+  }
+  &-group {
+    margin: 5px 3px;
+  }
+  &-control {
+    width: 100%;
+    font-size: 18px;
+    padding: 3px;
+    border: 1px solid #6d6c6c;
+    outline: none;
+    border-radius: 6px;
+  }
+  &-text {
+    display: inline-block;
+    margin: 3px 0;
+    font-family: "Lato", sans-serif;
   }
 }

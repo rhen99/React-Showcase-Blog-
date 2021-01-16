@@ -69,6 +69,12 @@
   color: lighten($primary, 10);
   font-weight: 600;
 }
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 @media (min-width: 768px) {
 }
 @media (min-width: 1024px) {
