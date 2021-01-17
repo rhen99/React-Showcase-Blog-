@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import './Footer.scss';
 import twitter from '../../icons/twitter.svg';
 import linkedin from '../../icons/linkedin.svg';
@@ -9,13 +11,13 @@ function Footer() {
                 <nav className="footer-nav">
                     <ul className="footer-nav-list">
                         <li className="footer-nav-item">
-                            <a href="#" className="footer-nav-link">Home</a>
+                            <Link to="/" className="footer-nav-link">Home</Link>
                         </li>
                         <li className="footer-nav-item">
-                            <a href="#" className="footer-nav-link">Blog</a>
+                            <Link to="/blog" className="footer-nav-link">Blog</Link>
                         </li>
                         <li className="footer-nav-item">
-                            <a href="#" className="footer-nav-link">See Code</a>
+                            <a href="https://github.com/rhen99/React-Showcase-Blog-" className="footer-nav-link">See Code</a>
                         </li>
                     </ul>
                 </nav>

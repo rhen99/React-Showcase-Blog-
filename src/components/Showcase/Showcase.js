@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import'./Showcase.scss'
+
 function Showcase() {
     return (
         <div className="showcase">
@@ -7,8 +9,8 @@ function Showcase() {
                     <h1 className="showcase-title">LAGS Blog Site</h1>
                     <p className="showcase-text">React Showcase</p>
                     <div className="showcase-actions">
-                        <a href="#" className="btn btn-primary">See Blog</a>
-                        <a href="#" className="btn btn-primary">See Code</a>
+                        <Link to="/blog" className="btn btn-primary">See Blog</Link>
+                        <a href="https://github.com/rhen99/React-Showcase-Blog-" target="_blank" className="btn btn-primary">See Code</a>
                     </div>
                 </div>
             </div>
