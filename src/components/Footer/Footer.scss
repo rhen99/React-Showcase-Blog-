@@ -1,0 +1,52 @@
+@import "../../partials/colors";
+img {
+  width: 20px;
+}
+.footer {
+  padding: 24px 0;
+  background: $secondary;
+  &-nav {
+    &-link {
+      display: block;
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      padding: 10px;
+      color: #fff;
+    }
+  }
+  &-socials {
+    padding: 16px 0;
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-item {
+      padding: 0 10px;
+    }
+  }
+  &-copyright {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    color: #fff;
+    a {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    &-container {
+      display: flex;
+      nav {
+        flex: 1;
+      }
+    }
+    &-nav {
+      &-list {
+        display: flex;
+      }
+    }
+  }
+}

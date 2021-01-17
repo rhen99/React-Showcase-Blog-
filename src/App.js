@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Showcase from './components/Showcase/Showcase';
 import About from './components/About/About'
 import PopularPosts from './components/PopularPosts/PopularPosts';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
     <Showcase/>
     <About/>
     <PopularPosts/>
+    <Footer/>
     </>
   );
 }
