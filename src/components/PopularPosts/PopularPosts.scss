@@ -1,0 +1,30 @@
+.popular {
+  padding: 16px 0;
+  &-title {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .popular {
+    &-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .popular {
+    &-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (min-width: 1280px) {
+}
