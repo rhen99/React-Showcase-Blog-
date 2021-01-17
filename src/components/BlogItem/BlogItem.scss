@@ -1,0 +1,11 @@
+.card {
+  margin-bottom: 16px;
+}
+.blog {
+  &-post {
+    &-title {
+      color: #333;
+      text-decoration: underline;
+    }
+  }
+}
