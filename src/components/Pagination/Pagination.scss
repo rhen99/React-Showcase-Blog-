@@ -1,0 +1,28 @@
+@import "../../partials/colors";
+.pagination {
+  margin: 32px 0;
+  &-list {
+    display: flex;
+  }
+  &-link {
+    display: block;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid rgba(51, 51, 51, 0.048);
+    color: $secondary;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    &:hover {
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+}
+.disabled {
+  opacity: 0.3;
+  &:hover {
+    background-color: #fff;
+    cursor: initial;
+    color: $secondary;
+  }
+}

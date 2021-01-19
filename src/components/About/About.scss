@@ -26,6 +26,9 @@
   form {
     padding: 16px 0;
   }
+  &-form-inline {
+    flex-direction: row;
+  }
 }
 @media (min-width: 768px) {
   .about {

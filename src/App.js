@@ -7,9 +7,13 @@ import About from './components/About/About'
 import PopularPosts from './components/PopularPosts/PopularPosts';
 import Footer from './components/Footer/Footer';
 import Blog from './components/Blog/Blog';
+import SinglePost from './components/SinglePost/SinglePost';
+
+import PostsState from "./context/posts/PostsState";
 function App() {
   return (
-    <Router>
+    <PostsState>
+      <Router>
       <>
         <Navbar/>
           <Switch>
@@ -18,6 +22,9 @@ function App() {
               <About/>
               <PopularPosts/>
             </Route>
+            <Route path="/blog/:id" exact>
+              <SinglePost/>
+            </Route>
             <Route path="/blog">
               <Blog/>
             </Route>
@@ -25,6 +32,7 @@ function App() {
         <Footer/>
       </>
     </Router>
+    </PostsState>
   );
 }
 

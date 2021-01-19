@@ -8,7 +8,7 @@ function About() {
                     <p>This is a mock blog website that's part my React Showcase projects, and part of my <a href="#">lincoldarhen.com</a>. This is solely made to show my React.js skills.</p>
                 </article>
                 <form action="#">
-                    <div className="form-inline">
+                    <div className="form-inline about-form-inline">
                         <div className="form-group">
                             <input type="text" placeholder="Enter your email here..." className="form-control"/>
                             <span className="form-text">We will not share your email.</span>

@@ -1,0 +1,18 @@
+.single {
+  font-family: "Lato", sans-serif;
+  min-height: calc(100vh - 205px);
+  &-title {
+    margin: 24px 0;
+  }
+  &-body {
+  }
+  &-text {
+    line-height: 22px;
+    margin: 48px 0;
+  }
+}
+.comments {
+  &-title {
+    margin-bottom: 32px;
+  }
+}
