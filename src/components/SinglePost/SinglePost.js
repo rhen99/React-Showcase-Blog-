@@ -12,7 +12,7 @@ function SinglePost() {
 
     useEffect(() => {
         PostsContext.getPost(id);
-    }, [])
+    }, [PostsContext, id])
     return (
         <div className="container single">
             <h1 className="single-title">{PostsContext.post.title}</h1>

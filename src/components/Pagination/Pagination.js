@@ -13,14 +13,14 @@ function Pagination({currentPage, postPerPage, totalPosts, paginate, nextPage, p
         if(currentPage === 1){
             setDisableNext(false);
             setDisablePrev(true);
-        }else if(currentPage == Math.ceil(totalPosts / postPerPage)){
+        }else if(currentPage === Math.ceil(totalPosts / postPerPage)){
             setDisablePrev(false);
             setDisableNext(true);
         }else{
             setDisablePrev(false);
             setDisableNext(false);
         }
-    }, [currentPage])
+    }, [currentPage, postPerPage, totalPosts])
 
 
     return (

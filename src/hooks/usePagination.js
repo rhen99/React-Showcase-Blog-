@@ -3,7 +3,7 @@ import {useState} from 'react'
 export default function usePagination(perPage) {
     
     const [currentPage, setCurrentPage] = useState(1);
-    const [postPerPage, setPostPerPage] = useState(typeof perPage === 'number' ? perPage: 10);
+    const [postPerPage] = useState(typeof perPage === 'number' ? perPage: 10);
 
     const indexOfLastPost = currentPage * postPerPage;
     const indexOfFirstPost = indexOfLastPost - postPerPage;

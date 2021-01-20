@@ -1,6 +1,6 @@
 import { GET_POST, GET_POSTS } from "../types";
 
-export default (state, action) =>{
+function PostsReducer(state, action) {
     const { payload, type } = action;
 
     switch (type){
@@ -20,3 +20,5 @@ export default (state, action) =>{
             return state;
     }
 }
+
+export default PostsReducer

@@ -24,19 +24,19 @@ function Footer() {
                 <nav className="footer-socials">
                     <ul className="footer-socials-list">
                         <li className="footer-socials-item">
-                           <a href='https://twitter.com/LAGSWS' target="_blank" className="footer-socials-link"><img src={twitter} alt=""/></a>
+                           <a href='https://twitter.com/LAGSWS' rel="noreferrer" target="_blank" className="footer-socials-link"><img src={twitter} alt=""/></a>
                         </li>
                         <li className="footer-socials-item">
-                           <a href="https://github.com/rhen99" target="_blank" className="footer-socials-link"><img src={github} alt=""/></a>
+                           <a href="https://github.com/rhen99" rel="noreferrer" target="_blank" className="footer-socials-link"><img src={github} alt=""/></a>
                         </li>
                         <li className="footer-socials-item">
-                           <a href="https://www.linkedin.com/in/lincoldarhen/" target="_blank" className="footer-socials-link"><img src={linkedin} alt=""/></a>
+                           <a href="https://www.linkedin.com/in/lincoldarhen/" target="_blank" rel="noreferrer" className="footer-socials-link"><img src={linkedin} alt=""/></a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div className="container">
-                <p className="footer-copyright">&copy; {new Date().getFullYear()} All Rights Reserved | <a href="#">lincoldarhen.com</a></p>
+                <p className="footer-copyright">&copy; {new Date().getFullYear()} All Rights Reserved | <a href="https://lincoldarhen.com">lincoldarhen.com</a></p>
             </div>
         </div>
     )

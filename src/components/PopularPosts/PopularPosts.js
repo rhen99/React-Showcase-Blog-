@@ -9,13 +9,13 @@ function PopularPosts() {
     const mounted = useRef(false);
     useEffect(() => {
         mounted.current = true;
-        if(mounted.current == true){
+        if(mounted.current === true){
             PostsContext.getThreePosts();
         }
         return () => {
             mounted.current = false
         }
-    }, []);
+    }, [PostsContext]);
 
     return (
         <div className="popular">

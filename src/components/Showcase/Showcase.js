@@ -10,7 +10,7 @@ function Showcase() {
                     <p className="showcase-text">React Showcase</p>
                     <div className="showcase-actions">
                         <Link to="/blog" className="btn btn-primary">See Blog</Link>
-                        <a href="https://github.com/rhen99/React-Showcase-Blog-" target="_blank" className="btn btn-primary">See Code</a>
+                        <a href="https://github.com/rhen99/React-Showcase-Blog-" target="_blank" rel="noreferrer" className="btn btn-primary">See Code</a>
                     </div>
                 </div>
             </div>

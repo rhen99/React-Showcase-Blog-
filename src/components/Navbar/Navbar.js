@@ -18,7 +18,7 @@ function Navbar() {
             <div className="navbar-container container">
                 <div className="navbar-logo">
                     <Link to="/"><span>LAGS</span> Blog Site</Link> 
-                    <a href="#" className="navbar-toggle" onClick={(e) => {
+                    <a href="#!" className="navbar-toggle" onClick={(e) => {
                         e.preventDefault();
                         setShow(!show);
                     }}>
@@ -31,7 +31,7 @@ function Navbar() {
                     <ul className="navbar-list">
                         <li className="navbar-item"><NavLink to="/" exact className="navbar-link" activeClassName="active">Home</NavLink></li>
                         <li className="navbar-item"><NavLink activeClassName="active" to="/blog" className="navbar-link" >Blog</NavLink></li>
-                        <li className="navbar-item see-code"><a href="https://github.com/rhen99/React-Showcase-Blog-" target="_blank" className="btn btn-primary">See Code</a></li>
+                        <li className="navbar-item see-code"><a href="https://github.com/rhen99/React-Showcase-Blog-" rel="noreferrer" target="_blank" className="btn btn-primary">See Code</a></li>
                     </ul>
                 </nav>
             </div>

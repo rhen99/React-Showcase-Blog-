@@ -9,13 +9,13 @@ function Blog() {
     const PostsContext = useContext(postsContext);
     useEffect(() => {
         mounted.current = true;
-        if(mounted.current == true){
+        if(mounted.current === true){
             PostsContext.getPosts();
         }
         return () =>{
             mounted.current = false;
         }
-    }, []);
+    }, [PostsContext]);
     const [paginate, nextPage, prevPage, currentPage, indexOfFirstPost, indexOfLastPost, postPerPage] = usePagination(10);
     const currentPosts = PostsContext.posts.slice(indexOfFirstPost, indexOfLastPost);
     return (
