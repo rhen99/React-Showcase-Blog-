@@ -34,13 +34,23 @@ const PostsState = (props) => {
             console.log(e);
         }
     }
+    const getThreePosts = async () => {
+        try {
+            const res = await axios.get('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=3');
 
+            const { data } = res;
+            dispatch({ type: GET_POSTS, payload: data });
+        } catch (e) {
+            console.log(e);
+        }
+    }
     return (
         <PostsContext.Provider value={{
             posts: state.posts,
             post: state.post,
             getPost,
-            getPosts
+            getPosts,
+            getThreePosts,
         }}>
             {props.children}
         </PostsContext.Provider>

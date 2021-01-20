@@ -24,13 +24,13 @@ function Footer() {
                 <nav className="footer-socials">
                     <ul className="footer-socials-list">
                         <li className="footer-socials-item">
-                           <a href="" className="footer-socials-link"><img src={twitter} alt=""/></a>
+                           <a href='https://twitter.com/LAGSWS' target="_blank" className="footer-socials-link"><img src={twitter} alt=""/></a>
                         </li>
                         <li className="footer-socials-item">
-                           <a href="" className="footer-socials-link"><img src={github} alt=""/></a>
+                           <a href="https://github.com/rhen99" target="_blank" className="footer-socials-link"><img src={github} alt=""/></a>
                         </li>
                         <li className="footer-socials-item">
-                           <a href="" className="footer-socials-link"><img src={linkedin} alt=""/></a>
+                           <a href="https://www.linkedin.com/in/lincoldarhen/" target="_blank" className="footer-socials-link"><img src={linkedin} alt=""/></a>
                         </li>
                     </ul>
                 </nav>

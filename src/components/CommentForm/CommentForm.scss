@@ -1,3 +1,13 @@
 .comment_form {
   margin: 32px 0;
 }
+@media (min-width: 1024px) {
+  .comment_form {
+    .form-inline {
+      flex-direction: row;
+      div {
+        flex: 1;
+      }
+    }
+  }
+}

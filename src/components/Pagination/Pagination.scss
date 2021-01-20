@@ -3,6 +3,7 @@
   margin: 32px 0;
   &-list {
     display: flex;
+    flex-wrap: wrap;
   }
   &-link {
     display: block;
@@ -13,6 +14,10 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     &:hover {
+      background-color: $secondary;
+      color: #fff;
+    }
+    &.active {
       background-color: $secondary;
       color: #fff;
     }

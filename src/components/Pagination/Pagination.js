@@ -27,15 +27,21 @@ function Pagination({currentPage, postPerPage, totalPosts, paginate, nextPage, p
         <nav className="pagination">
             <ul className="pagination-list">
                 <li className="pagination-item">
-                    <a onClick={() => prevPage()} href="#!" className={disablePrev ? "pagination-link disabled" : "pagination-link"}>&laquo;</a>
+                    {
+                        disablePrev ? (
+                            <span className="pagination-link disabled">&laquo;</span>
+                        ) : (
+                            <a onClick={() => prevPage()} href="#!" className="pagination-link">&laquo;</a>
+                        )
+                    }
                 </li>
                 {pageNumbers.map(number => (
                     <li className="pagination-item" key={number}>
-                        <a href="#!" onClick={() => paginate(number)} className="pagination-link">{number}</a>
+                        <a href="#!" onClick={() => paginate(number)} className={number === currentPage ? "pagination-link active": "pagination-link"}>{number}</a>
                     </li>
                 ))}
                 <li className="pagination-item">
-                    <a onClick={() => nextPage()} href="#!"  className={disableNext ? "pagination-link disabled" : "pagination-link"}>&raquo;</a>
+                    {disableNext ? (<span className="pagination-link disabled">&raquo;</span>) : (<a onClick={() => nextPage()} href="#!"  className="pagination-link">&raquo;</a>)}
                 </li>
             </ul>
         </nav>

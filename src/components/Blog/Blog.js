@@ -1,23 +1,23 @@
 import BlogItem from "../BlogItem/BlogItem";
-import { useEffect, useContext, useState } from "react";
+import { useEffect, useContext, useRef } from "react";
+import usePagination from '../../hooks/usePagination';
 import postsContext from '../../context/posts/PostsContext'
 import "./Blog.scss";
-import PostsState from "../../context/posts/PostsState";
 import Pagination from "../Pagination/Pagination";
 function Blog() {
+    const mounted = useRef(false);
     const PostsContext = useContext(postsContext);
     useEffect(() => {
-        PostsContext.getPosts();
+        mounted.current = true;
+        if(mounted.current == true){
+            PostsContext.getPosts();
+        }
+        return () =>{
+            mounted.current = false;
+        }
     }, []);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [postPerPage, setPostPerPage] = useState(10);
-
-    const indexOfLastPost = currentPage * postPerPage;
-    const indexOfFirstPost = indexOfLastPost - postPerPage;
+    const [paginate, nextPage, prevPage, currentPage, indexOfFirstPost, indexOfLastPost, postPerPage] = usePagination(10);
     const currentPosts = PostsContext.posts.slice(indexOfFirstPost, indexOfLastPost);
-    const paginate = pageNumber => setCurrentPage(pageNumber);
-    const nextPage = () => setCurrentPage(currentPage + 1);
-    const prevPage = () => setCurrentPage(currentPage - 1);
     return (
         <>
             <div className="container blog">
